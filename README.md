@@ -1,8 +1,13 @@
+# GoCompiler
+
+El código se desarrolló como primera aproximación de un compilador de Go en el que seraliza un análisis 
+léxico del lenguaje.
+
 A continuación se explican los detalles más importantes de la organización y estructuras interna
 así como estructuras de datos empleadas para el desarrollo del compilador
 
 
-Ejecución:
+## Ejecución
 	-Para la compilación del código, dentro de la carpeta "codigo", ejecutar en una terminal el comando make, 
 	-Para eliminar todos los elementos generados de la compilación excepto el propio binario ejecutar "make clean"
 	-Para eliminar todos los elementos generados de la compilación ejecutar "make cleanall"
@@ -10,6 +15,8 @@ Ejecución:
 	-Para ejecutar el compilador, se ejecuta "./CompiladorGo concurrentSum.go" (o el nombre del archivo que contenga
 	el código .go que se quiera analizar).
 
+
+## Estructura del código
 Tabla de símbolos:
 	El uso de una única tabla hash tiene los mejores resultandos en cuanto a velocidad de búsqueda se refiere
 	sin embargo, muestra problemas en cuanto a escalabilidad debido a la gran cantidad de memoria que emplea.
